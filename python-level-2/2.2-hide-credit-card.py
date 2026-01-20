@@ -16,9 +16,9 @@ name = str(args[1])
 
 def get_credit_card_number():
     string_numbers = ''
-    for iteration in range(4):      # run loop 4 times
+    for iteration in range(4):      
 
-        for number in range(4):     # generate 4 numbers as a string then go to parent for loop
+        for number in range(4):     
             random_number = random.randint(min_number, max_number)
             numbers.append(str(random_number))
 
@@ -56,3 +56,4 @@ answer = input('y/n: ')
 
 if answer == "y":
     credit_card_unmasked = show_credit_card(name, credit_card_info[0])
+
